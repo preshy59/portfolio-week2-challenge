@@ -9,12 +9,15 @@ body {
   line-height: 1.5;
 }
 
+/* heading css */
 #header{
   width: 100%;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   background-color: #404040;
   position: fixed;
+  z-index: 1;
 }
 
 #header h1 {
@@ -39,40 +42,57 @@ body {
   text-decoration: none;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
-  /* s */
-}
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-.contact-section {
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  column-gap: 60px;
   
 }
-.fb{
-  color: skyblue;
-  text-decoration: none;
-}
-.tw{
-  color: yellow;
-  text-decoration: none;
+
+/* hero banner css */
+.hero-banner{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #5d5151;
+  height: 550px;
+  padding-top: 100px;
 }
 
-.ig{
-  color: red;
-  text-decoration: none;
-} */
+.name{
+  display: block;
+  width: 50%;
+  margin: 0 50px;
+  
+}
+
+.name p{
+  color: aquamarine;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  
+
+}
+.name h2{
+  color: aquamarine;
+  font-weight: 700;
+  font-size: 55px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.image{
+  display: block;
+  position: absolute;
+  width: 50%;
+  top: 150px;
+ 
+    
+}
+.image img{
+  width: 60%;
+  height: 70%;
+  border-radius: 220px;
+  margin-left: 650px;
+}
+
