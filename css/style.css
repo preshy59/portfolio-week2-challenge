@@ -9,7 +9,40 @@ body {
   line-height: 1.5;
 }
 
-h1,
+#header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #404040;
+  position: fixed;
+}
+
+#header h1 {
+  width: 25%;
+  font-weight: 500px;
+  margin: 10px 30px;
+  color: #404040;
+  padding: 0 10px;
+  background-color: aquamarine;
+  
+}
+#navBar {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.about, .home, .contact,.work{
+  color: aquamarine;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  /* s */
+}
+
+/* h1,
 h2,
 h3,
 h4,
@@ -21,3 +54,25 @@ h6 {
 p {
   margin: 0;
 }
+.contact-section {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  column-gap: 60px;
+  
+}
+.fb{
+  color: skyblue;
+  text-decoration: none;
+}
+.tw{
+  color: yellow;
+  text-decoration: none;
+}
+
+.ig{
+  color: red;
+  text-decoration: none;
+} */
