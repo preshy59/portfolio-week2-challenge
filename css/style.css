@@ -97,10 +97,12 @@ body {
 
 /* About container*/
 #about{
+  background-color: antiquewhite;
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 30px auto ;
+  /* margin: 30px auto ; */
+  
 
 }
 #about h3{
@@ -109,6 +111,7 @@ body {
   font-size: 40px;
   margin: 0 10px 0px 50px;
   font-weight: 700;
+  border-right: solid 5px aquamarine;
 }
 
 #about p{
@@ -119,17 +122,36 @@ body {
 }
 
 /* portfolio container */
-.subHeading{
-  text-align: center;
-  width: 30%;
-  float: left;
-  margin-top: -450px;
+#work {
+  width: 100%;
+  margin: 0 ;
+  
 }
- #work {
-  width: 60%;
-  margin: 0 10px 0 280px;
+
+.heading{
+    width: 25%;
+    float: left;
+    margin: 20px 20px 0 0;
+}
+    .heading h3{
+    font-size: 40px;
+    margin: 20px;
+    padding: 40px;
+    font-weight: 700;
+    background-color: brown;
+    
+}
+ 
+.gallery{
+  width: 75%;
+  position: relative;
+  left: 45px;
+  top: -160px;
+  background-color: blue;
+  float: right;
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  margin: 0 50px 0 50px ;
+  grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 100px 100px 100px 100px;
   grid-template-areas: 
   "surf surf"
@@ -137,7 +159,9 @@ body {
   "led calculator"
   "pasta buddy"
   ;
+  border-left: solid 5px aquamarine;
 }
+
 
 #work1{
   grid-area: surf;
@@ -174,3 +198,29 @@ body {
   display: grid;
   align-content: end; 
  }
+
+ #contact{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto ;
+
+}
+#contact h3{
+  width: 50%;
+  float: left;
+  font-size: 30px;
+  margin: 0 50px 0px 50px;
+  font-weight: 700;
+  border-right: solid 5px aquamarine;
+}
+
+#contact a{
+  width: 50%;
+  margin: 0 20px 0px 50px;
+  float: right;
+  text-align: justify;
+  text-decoration: none;
+  padding: 10px;
+  
+}
