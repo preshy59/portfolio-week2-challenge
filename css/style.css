@@ -25,7 +25,7 @@ body {
   font-weight: 500px;
   margin: 10px 30px;
   color: #404040;
-  padding: 0 10px;
+  padding: 0 10px 0 25px;
   background-color: aquamarine;
   
 }
@@ -85,10 +85,9 @@ body {
   display: block;
   position: absolute;
   width: 50%;
-  top: 150px;
- 
-    
+  top: 150px; 
 }
+
 .image img{
   width: 60%;
   height: 70%;
@@ -96,3 +95,83 @@ body {
   margin-left: 650px;
 }
 
+/* About container*/
+/* #about{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto ;
+
+}
+#about h3{
+  width: 25%;
+  float: left;
+  font-size: 40px;
+  margin: 0 10px 0px 50px;
+  font-weight: 700;
+}
+
+#about p{
+  width: 75%;
+  margin: 0 100px 0px 30px;
+  float: right;
+  text-align: justify;
+} */
+
+/* portfolio container */
+.subHeading{
+  text-align: center;
+  width: 30%;
+  float: left;
+  margin-top: -450px;
+}
+ #work {
+  width: 60%;
+  margin: 0 10px 0 280px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas: 
+  "surf surf"
+  "surf surf"
+  "led calculator"
+  "pasta buddy"
+  
+  ;
+}
+
+#work1{
+  grid-area: surf;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#work2{
+  grid-area: led;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#work3{
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#work4{
+  grid-area: pasta;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#work5{
+  grid-area: buddy;
+  background-image: url("../images/02-run-buddy.jpg");
+
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end; 
+ }
