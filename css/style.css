@@ -133,7 +133,7 @@ body {
 
 /* portfolio container */
 #work {
-  width: var(--secondary-width);
+  width: var(--primary-width);
   margin: 0 ;
   
 }
@@ -223,7 +223,7 @@ body {
   padding: 30px 20px;
   margin: 0 75px 0px 50px;
   font-weight: 700;
-  border-right: solid 5px var(--primary-color);
+  border-right: solid 5px var(--basic-color);
 }
 
 #contact a{
@@ -277,7 +277,7 @@ body {
   "pasta"
   "buddy"
   ;
-  border-left: solid 5px var(--primary-color);
+  border-left: solid 5px aquamarine;
   }
   #contact{
     display: inline-flex;
