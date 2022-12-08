@@ -111,6 +111,7 @@ body {
   width: var(--primary-width);
   display: var(--main-direction);
   flex-direction: row;
+  margin-top: 20px;
   
   
 
