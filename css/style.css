@@ -1,3 +1,12 @@
+:root{
+  --primary-width:100%;
+  --secondary-width:25%;
+  --main-direction :flex;
+  --primary-color: #404040;
+  --basic-color: aquamarine;
+
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,31 +16,31 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  max-height: fit-content;
+ 
 }
 
 /* heading css */
 #header{
-  width: 100%;
+  width: var(--primary-width);
   margin-bottom: 100px;
-  display: flex;
+  display: var(--main-direction);
   flex-direction: row;
-  background-color: #404040;
+  background-color: var(--primary-color);
   position: fixed;
   z-index: 1;
 }
 
 #header h1 {
-  width: 25%;
+  width: var(--secondary-width);
   font-weight: 500px;
   margin: 10px 30px;
-  color: #404040;
+  color: var(--primary-color);
   padding: 0 10px 0 25px;
-  background-color: aquamarine;
+  background-color: var(--basic-color);
   
 }
 #navBar {
-  display: flex;
+  display: var(--main-direction);
   width: 75%;
   align-items: center;
   justify-content: space-evenly;
@@ -39,7 +48,7 @@ body {
 }
 
 .about, .home, .contact,.work{
-  color: aquamarine;
+  color: var(--basic-color);
   text-decoration: none;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
@@ -48,8 +57,8 @@ body {
 
 /* hero banner css */
 .hero-banner{
-  width: 100%;
-  display: flex;
+  width: var(--primary-width);
+  display: var(--main-direction);
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -66,7 +75,7 @@ body {
 }
 
 .name p{
-  color: aquamarine;
+  color: var(--basic-color);
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 0px;
@@ -75,7 +84,7 @@ body {
 
 }
 .name h2{
-  color: aquamarine;
+  color: var(--basic-color);
   font-weight: 700;
   font-size: 35px;
   font-style: italic;
@@ -99,20 +108,20 @@ body {
 
 /* About container*/
 #about{
-  width: 100%;
-  display: flex;
+  width: var(--primary-width);
+  display: var(--main-direction);
   flex-direction: row;
-  /* margin: 30px auto ; */
+  
   
 
 }
 #about h3{
-  width: 25%;
+  width: var(--secondary-width);
   float: left;
   font-size: 40px;
   margin: 0 10px 0px 50px;
   font-weight: 700;
-  border-right: solid 5px aquamarine;
+  border-right: solid 5px var(--basic-color);
 }
 
 #about p{
@@ -124,13 +133,13 @@ body {
 
 /* portfolio container */
 #work {
-  width: 100%;
+  width: var(--secondary-width);
   margin: 0 ;
   
 }
 
 .heading{
-    width: 25%;
+    width: var(--secondary-width);
     float: left;
     margin: 20px 20px 0 0;
 }
@@ -158,7 +167,7 @@ body {
   "led calculator"
   "pasta buddy"
   ;
-  border-left: solid 5px aquamarine;
+  border-left: solid 5px var(--basic-color);
 }
 
 
@@ -199,8 +208,8 @@ body {
  }
 
  #contact{
-  width: 100%;
-  display: flex;
+  width: var(--primary-width);
+  display: var(--main-direction);
   position: relative;
   top: -120px;
   flex-direction: row;
@@ -214,7 +223,7 @@ body {
   padding: 30px 20px;
   margin: 0 75px 0px 50px;
   font-weight: 700;
-  border-right: solid 5px aquamarine;
+  border-right: solid 5px var(--primary-color);
 }
 
 #contact a{
@@ -228,4 +237,67 @@ body {
     
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  img{
+    display:none;
+  }
+
+  .heading h3{
+    width: 15%;
+    float: left;
+    margin-right: 50px;
+    margin: 20px 0 0 0;
+}
+  h1,h2{
+    display: inline;
+    font-size: 10px;
+    margin: 0 30px;
+    padding: 0;
+  }
+  .about{
+    flex-direction:column ;
+  }
+  .name{
+    /* width: 100%; */
+    display: block;
+      max-width: 50%;
+  }
+  .gallery{
+    max-width: 70%;
+    top: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-template-areas: 
+  "surf "
+  "led "
+  "calculator"
+  "pasta"
+  "buddy"
+  ;
+  border-left: solid 5px var(--primary-color);
+  }
+  #contact{
+    display: inline-flex;
+    max-width: 100%;
+    margin-top: 150px;
+    
+  }
+
+  #contact h3{
+    font-size: 20px;
+    margin: 10px;
+    max-width: 25%;
+    
+  }
+  #contact a{
+    font-size: 20px;
+    margin: 10px ;
+    padding: 0;
+   max-width: 55%;
+    
+  }
+}
 
